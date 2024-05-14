@@ -21,7 +21,7 @@ public class NumberHashing_UsingMap {
         }
         System.out.print("Enter value of query : ");
         int query = cin.nextInt();
-        System.out.print("Enter numbers to find count in array : ");
+        System.out.print("Enter numbers to find count in map : ");
         while (query >= 0){
             int number = cin.nextInt();
             query--;
