@@ -1,6 +1,7 @@
 package Arrays;
 
 public class LeftRotation {
+    //left rotation by d position
     //left rotation with new array
 //    public static int[] leftRotation(int[] arr,int d){
 //        int size = arr.length;
