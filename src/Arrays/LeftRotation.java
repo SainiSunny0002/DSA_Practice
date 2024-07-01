@@ -65,24 +65,17 @@ public class LeftRotation {
         return arr;
     }
     public static int[] reverseArray(int[] arr,int iStart,int size){
-        int temp=0;
         for (int i=iStart;i<=size/2;i++){
-//            temp = arr[i];
-//            arr[i] = arr[size-1];
-//            arr[size-1] = temp;
-            swap(arr,temp,size,i);
+            swap(arr,size,i);
             size--;
         }
         if (iStart >= size/2) {
-//            temp = arr[iStart];
-//            arr[iStart] = arr[size-1];
-//            arr[size-1] = temp;
-            swap(arr,temp,size,iStart);
+            swap(arr,size,iStart);
         }
         return arr;
     }
-    public static void swap(int[] arr,int temp,int size,int iStart){
-        temp = arr[iStart];
+    public static void swap(int[] arr,int size,int iStart){
+        int temp = arr[iStart];
         arr[iStart] = arr[size-1];
         arr[size-1] = temp;
     }
