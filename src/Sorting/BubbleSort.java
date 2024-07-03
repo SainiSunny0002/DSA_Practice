@@ -19,19 +19,40 @@ public class BubbleSort {
 //    }
 
     //with do while and for loop
+//    public static void bubbleSort(int[] arr){
+//        boolean swapped;
+//        do {
+//            swapped = false;
+//            for (int i = 0; i < arr.length-1; i++) {
+//                if (arr[i] > arr[i+1]) {
+//                    int temp = arr[i];
+//                    arr[i] = arr[i+1];
+//                    arr[i+1] = temp;
+//                    swapped = true;
+//                }
+//            }
+//        } while (swapped);
+//    }
+
+    //recursive approach
     public static void bubbleSort(int[] arr){
-        boolean swapped;
-        do {
-            swapped = false;
-            for (int i = 0; i < arr.length-1; i++) {
-                if (arr[i] > arr[i+1]) {
-                    int temp = arr[i];
-                    arr[i] = arr[i+1];
-                    arr[i+1] = temp;
-                    swapped = true;
-                }
+        int n = arr.length;
+        recursiveSort(arr,n);
+    }
+
+    public static void recursiveSort(int[] arr,int n){
+        if (n == 1) return;
+        boolean swapped = false;
+        for (int i=0;i<n-1;i++){
+            if (arr[i] > arr[i+1]){
+                int temp = arr[i];
+                arr[i] = arr[i+1];
+                arr[i+1] = temp;
+                swapped = true;
             }
-        } while (swapped);
+        }
+        if (swapped == false) return;
+        recursiveSort(arr,n-1);
     }
     public static void main(String[] args) {
         int[] arr = {64,34,25,12,22,11,90};
