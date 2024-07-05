@@ -58,30 +58,28 @@ public class LeftRotation {
 
     //Reversal algorithm
     public static int[] leftRotation(int[] arr,int d){
-        int size = arr.length,iStart=0;
-        arr = reverseArray(arr,iStart,size);
-        arr = reverseArray(arr,iStart,size-d);
-        arr = reverseArray(arr,iStart+size-d,size);
+        int size = arr.length;
+        // Reverse the first d elements
+        arr = reverseArray(arr, 0, d - 1);
+        // Reverse the remaining elements
+        arr = reverseArray(arr, d, size - 1);
+        // Reverse the whole array
+        arr = reverseArray(arr, 0, size - 1);
         return arr;
     }
-    public static int[] reverseArray(int[] arr,int iStart,int size){
-        for (int i=iStart;i<=size/2;i++){
-            swap(arr,size,i);
-            size--;
-        }
-        if (iStart >= size/2) {
-            swap(arr,size,iStart);
+    public static int[] reverseArray(int[] arr,int start,int end){
+        while (start < end) {
+            int temp = arr[start];
+            arr[start] = arr[end];
+            arr[end] = temp;
+            start++;
+            end--;
         }
         return arr;
-    }
-    public static void swap(int[] arr,int size,int iStart){
-        int temp = arr[iStart];
-        arr[iStart] = arr[size-1];
-        arr[size-1] = temp;
     }
     public static void main(String[] args) {
         int arr[] = {1, 2, 3, 4, 5, 6, 7};
-        int d = 2;
+        int d = 4;
         int[] rotatedArray = leftRotation(arr,d);
         for (int element : rotatedArray){
             System.out.print(element + " ");
