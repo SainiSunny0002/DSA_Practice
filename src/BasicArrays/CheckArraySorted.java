@@ -1,4 +1,4 @@
-package Arrays;
+package BasicArrays;
 
 public class CheckArraySorted {
     public static boolean checkArraySorted(int arr[]){

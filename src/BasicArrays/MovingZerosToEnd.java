@@ -1,7 +1,4 @@
-package Arrays;
-
-import java.util.ArrayList;
-import java.util.List;
+package BasicArrays;
 
 public class MovingZerosToEnd {
     //brute force approach

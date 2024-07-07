@@ -1,9 +1,4 @@
-package Arrays;
-
-import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Set;
+package BasicArrays;
 
 public class RemoveDuplicates {
 //    public static int removeDuplicates(int arr[]){

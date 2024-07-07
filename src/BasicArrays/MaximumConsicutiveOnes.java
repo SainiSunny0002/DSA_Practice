@@ -1,4 +1,4 @@
-package Arrays;
+package BasicArrays;
 
 public class MaximumConsicutiveOnes {
     public static int maxConsicutiveOnes(int[] arr){

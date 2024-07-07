@@ -1,4 +1,4 @@
-package Arrays;
+package BasicArrays;
 
 public class LeftRotation {
     //left rotation by d position

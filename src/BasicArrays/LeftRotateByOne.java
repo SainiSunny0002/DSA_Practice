@@ -1,4 +1,4 @@
-package Arrays;
+package BasicArrays;
 
 public class LeftRotateByOne {
     public static void leftRotateByOne(int arr[]){

@@ -1,4 +1,4 @@
-package Arrays;
+package BasicArrays;
 
 public class LargestELement {
     //brute force approach is when we sort an array an find the largest

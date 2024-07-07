@@ -1,4 +1,4 @@
-package Arrays;
+package BasicArrays;
 
 public class MissingNumber {
     //brute force approach TC O(n^2) SC O(1)

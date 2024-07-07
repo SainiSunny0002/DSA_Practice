@@ -1,4 +1,4 @@
-package Arrays;
+package BasicArrays;
 
 public class SecondLargestWithoutSorting {
     //https://www.naukri.com/code360/problems/ninja-and-the-second-order-elements_6581960?utm_source=youtube&utm_medium=affiliate&utm_campaign=striver_Arrayproblems

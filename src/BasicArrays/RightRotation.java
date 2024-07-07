@@ -1,4 +1,4 @@
-package Arrays;
+package BasicArrays;
 
 public class RightRotation {
     //right rotation by k position

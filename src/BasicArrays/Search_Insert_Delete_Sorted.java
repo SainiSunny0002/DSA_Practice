@@ -1,4 +1,4 @@
-package Arrays;
+package BasicArrays;
 
 public class Search_Insert_Delete_Sorted {
     public static int searchElement(int[] search,int searchElement){
