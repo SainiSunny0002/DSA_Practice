@@ -26,7 +26,7 @@ public class LongestSubarrayWithSum_K {
 //        return maxLength;
 //    }
 
-    //better approach for positive array only using hashing TC O(n*logn)(ordered map) or O(n*1)(unordered map) SC O(n)
+    //better approach for positive array only using hashing TC O(n*logn)(ordered map) SC O(n)
     //for array contain positive and negative both numbers this is optimal approach
 //    public static int longestSubarrayWithSum_k(int arr[],int k){
 //        Map<Integer,Integer> prefixSum = new HashMap<>();
