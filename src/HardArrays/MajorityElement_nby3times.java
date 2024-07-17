@@ -61,8 +61,8 @@ public class MajorityElement_nby3times {
             if (element2==arr[i]) count2++;
         }
         int mini = Math.floorDiv(n,3);
-        if (count1>=mini) list.add(element1);
-        if (count2>=mini) list.add(element2);
+        if (count1>mini) list.add(element1);
+        if (count2>mini) list.add(element2);
         return list;
     }
     public static void main(String[] args) {
