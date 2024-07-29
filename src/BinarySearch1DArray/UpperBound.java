@@ -1,14 +1,14 @@
-package BinarySearch;
+package BinarySearch1DArray;
 
-public class LowerBound {
+public class UpperBound {
     // TC O(log2n) SC O(1)
-    //smallest index such that arr[index] >= x
-    public static int lowerBound(int arr[],int n,int x){
+    //smaller index such that arr[index] > x
+    public static int upperBound(int arr[],int n,int x){
         int low = 0,high = n-1;
         int ans = n;
         while (low <= high){
             int mid = (low+high)/2;
-            if (arr[mid] >= x) {
+            if (arr[mid] > x){
                 ans = mid;
                 high = mid-1;
             }else {
@@ -18,9 +18,9 @@ public class LowerBound {
         return ans;
     }
     public static void main(String[] args) {
-        int arr[] = {1,2,3,3,7,8,9,9,9,11};
+        int arr[] = {2,3,6,7,8,8,11,11,11,12};
         int n = arr.length;
-        int x = 1;
-        System.out.print(lowerBound(arr,n,x));
+        int x = 6;
+        System.out.print(upperBound(arr,n,x));
     }
 }

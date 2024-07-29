@@ -1,4 +1,4 @@
-package BinarySearch;
+package BinarySearch1DArray;
 
 public class SearchInsertPosition {
     //TC O(log2n) SC O(1)

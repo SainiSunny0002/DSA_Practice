@@ -1,7 +1,4 @@
-package BinarySearch;
-
-import java.util.ArrayList;
-import java.util.List;
+package BinarySearch1DArray;
 
 public class Floor_CeilSortedArray {
     //TC O(logn) SC O(1)

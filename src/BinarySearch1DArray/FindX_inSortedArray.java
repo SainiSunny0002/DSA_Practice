@@ -1,4 +1,4 @@
-package BinarySearch;
+package BinarySearch1DArray;
 
 public class FindX_inSortedArray {
     // TC O(log2n) SC O(1)
